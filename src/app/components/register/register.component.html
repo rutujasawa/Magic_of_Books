@@ -1,0 +1,38 @@
+<!-- <p>register works!</p> -->
+<div>
+    <mat-toolbar color="primary">
+        <span>Magic of Books</span>
+    </mat-toolbar>
+</div>
+<div class="registercontainer">
+    <mat-card>
+        <h1>Register</h1>
+        <form class="example-form" [formGroup]="registerForm">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Name" formControlName="username" [(ngModel)]="user.userName">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput placeholder="Pass" formControlName="password" [(ngModel)]="user.password">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="abc@gmail.com" formControlName="email" [(ngModel)]="user.email">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Phone</mat-label>
+                <input matInput placeholder="9874563210" formControlName="phone" [(ngModel)]="user.phone">
+            </mat-form-field>
+            <br>
+            <button mat-raised-button color="primary" (click)="addUser()" [disabled]="registerForm.invalid">Register</button>
+        </form>
+        <br>
+        <hr>
+        <div>Already registerd?</div>
+        <a routerLink="/login">Click here to Login</a>
+    </mat-card>
+</div>

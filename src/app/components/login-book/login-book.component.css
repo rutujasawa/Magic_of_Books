@@ -1,0 +1,39 @@
+mat-card{
+    width:20vw;
+    border: 1px solid grey;
+    margin: 5px;
+    text-align: center;
+}
+.bookcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 50px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.desc a{
+    color: white;
+    text-decoration: none;
+}
+h2{
+    text-align: center;
+    margin-top: 2vh;
+}
+.btns{
+    margin-left: 5px;
+}
+#rbtn{
+    margin-top: 5px;
+}
+
+mat-card:hover{
+    border: 2px solid blue;
+    background-color: rgb(225, 243, 243);
+    transform: scale(1.1);
+    transition: 0.2s;
+    z-index: 99;
+}
+

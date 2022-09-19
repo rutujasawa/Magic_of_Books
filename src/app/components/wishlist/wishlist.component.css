@@ -1,0 +1,44 @@
+button{
+    margin-left: auto;
+}
+h1{
+    text-align: center;
+    margin: 15px;
+}
+h1:hover{
+    color: blue;
+}
+
+/* ---------------------------------- */
+
+.bookcontainer{
+    border: 1px solid rgb(208, 202, 202);
+    margin: 15px 50px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+
+mat-card{
+    border: 1px solid black;
+    width: 50%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.image{
+    margin-top: auto;
+}
+.desc{
+    margin-left: 25%;
+}
+#cbtn{
+    margin-top: 40%;
+} 
+#rbtn a{
+    text-decoration: none;
+    color: white;
+} 
+mat-card:hover{
+    transform: scale(1.1);
+}

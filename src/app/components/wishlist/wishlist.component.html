@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+    <span>Magic of Books</span>
+    <button  mat-raised-button color="accent" (click)="home()">Home</button>
+</mat-toolbar>
+<h1>Welcome to your Wishlist</h1>
+
+<div class="bookcontainer">
+    <mat-card class="card" *ngFor=" let book of bookwarr">
+        <div class="image">
+            <img src="./assets/{{book.imageLink}}" style="height:120px;width:90px">
+        </div>
+
+        <div class="desc">
+            <div> Book No : {{book.id}}</div>
+            <div> Title : {{book.title}}</div>
+            <div>Author: {{book.author}}</div>
+            <div>Country : {{book.country}}</div>
+            <div>Language: {{book.language}}</div>
+            
+            
+        </div>
+        <div class="ldiv">
+            <div><button mat-raised-button color="primary" id="rbtn"><a href={{book.link}}>Read</a></button></div>
+            <button mat-raised-button color="primary" id="cbtn" (click)="deletebookx(book.id)">Completed</button>
+        </div>
+    </mat-card>
+</div>
+<app-footer></app-footer>

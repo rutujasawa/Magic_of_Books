@@ -1,0 +1,23 @@
+mat-card{
+    width:20vw;
+    border: 1px solid blue;
+    margin: 5px;
+    text-align: center;
+}
+.bookcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 50px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.desc a{
+    color: white;
+    text-decoration: none;
+}
+#rbtn{
+    margin-top: 5px;
+}

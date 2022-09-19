@@ -1,0 +1,35 @@
+<mat-toolbar color="primary">
+    <span>Magic of Books</span>
+</mat-toolbar>
+
+
+<div class="logincontainer">
+    <mat-card>
+        <h1>Login</h1>
+        <form class="example-form" [formGroup] = "loginForm">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Name" formControlName="username">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Pass" formControlName="password">
+            </mat-form-field>
+            <br>
+            <button mat-raised-button color="primary" (click)="getUser()" [disabled]="loginForm.invalid">Login</button>
+        </form>
+        <br>
+        <hr>
+        <div>New User?</div>
+        <a routerLink="/register">Click here to Register</a>
+    </mat-card>
+</div>
+
+
+
+
+
+
+
+<app-footer></app-footer>
